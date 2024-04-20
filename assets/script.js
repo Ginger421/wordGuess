@@ -11,10 +11,13 @@ var randomWord = '';
 var randomWordBankIndex = Math.floor(Math.random() * wordBank.length);
 var isGameWon = false;
 
+//this fnct generates a random word
 function pickAWord() {
   randomWord = wordBank[randomWordBankIndex];
+  console.log(randomWord)
 }
 
+//console.log(word length)
 function startGame() {
   pickAWord();
   renderBlanks();
@@ -26,7 +29,7 @@ function startTimer() {
   var timer = setInterval(function () {
     console.log(seconds);
     seconds--;
-    timerEl.textContent = seconds;
+    timerEl.textContent = `time remaining ${seconds}`;
     if (isGameWon && seconds > 0) {
       winGame();
       clearInterval(timer);
@@ -39,25 +42,26 @@ function startTimer() {
 
 function winGame() {
   wins++;
-  winCount.textContent = wins;
+  winCount.textContent = `wins ${wins}`;
 }
 
 function loseGame() {
   losses++;
-  lossCount.textContent = losses;
+  lossCount.textContent = `losses ${losses}`;
 }
 
 function renderBlanks() {
   var wordLength = randomWord.length;
   var wordBlanks = '';
   for (let i = 0; i < wordLength; i++) {
-    wordBlanks += '_';
+    wordBlanks += '_ '; 
   }
   wordToGuess.textContent = wordBlanks;
 }
 
 function checkGuessedLetter(event) {
   if (randomWord.includes(event.key)) {
+    
   }
 }
 
