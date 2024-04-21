@@ -1,3 +1,6 @@
+Description
+wordGuess is a game where players are given 10 secobds to guess a word. Players press a letter of their choice and if they guess the correct letter the blank is filled in. 
+
  As a user, I want to start the game by clicking on a button. 
 
 * As a user, I want to try and guess a word by filling in a number of blanks that match the number of letters in that word.
