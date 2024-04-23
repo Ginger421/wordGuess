@@ -61,7 +61,7 @@ function renderBlanks() {
 
 function checkGuessedLetter(event) {
   if (randomWord.includes(event.key)) {
-    return
+    console.log(key)
   }
 }
 
