@@ -65,5 +65,9 @@ function checkGuessedLetter(event) {
   }
 }
 
+function addLetter() {
+
+} //end addLetter
+
 startButton.addEventListener('click', startGame);
 document.addEventListener('keydown', checkGuessedLetter);
