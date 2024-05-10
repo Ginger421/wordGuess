@@ -1,10 +1,24 @@
-Description
+#wordGuess
+
+##Description
 wordGuess is a game where players are given 10 secobds to guess a word. Players press a letter of their choice and if they guess the correct letter the blank is filled in. 
 
 Repo: https://github.com/Ginger421/wordGuess
 Live:
 
  As a user, I want to start the game by clicking on a button. 
+
+## Table of Contents
+* [Usage](#usage)
+* [License](#license)
+* [Questions](#questions)
+
+## Usage
+
+## License 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Questions
 
 * As a user, I want to try and guess a word by filling in a number of blanks that match the number of letters in that word.
 
