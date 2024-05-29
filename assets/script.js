@@ -69,9 +69,9 @@ function addLetter() {
 
 } //end addLetter
 
-localStorage.setItem();
+localStorage.setItem(key, value);
 
-localStorage.getItem();
+localStorage.getItem(key);
 
 startButton.addEventListener('click', startGame);
 document.addEventListener('keydown', checkGuessedLetter);

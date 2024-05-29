@@ -19,6 +19,8 @@ Live:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Questions
+Email: gingerowen0421@gmail.com
+Github: Ginger421
 
 * As a user, I want to try and guess a word by filling in a number of blanks that match the number of letters in that word.
 
