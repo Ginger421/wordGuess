@@ -1,6 +1,5 @@
 body {
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
     margin: 30%
@@ -8,4 +7,8 @@ body {
 
 div {
     background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:hsl(from color 2px solid green)
 }

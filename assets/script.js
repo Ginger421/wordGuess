@@ -7,7 +7,7 @@ var wordToGuess = document.querySelector('#word-to-guess');
 var wordBank = ['superman', 'spiderman', 'thor', 'ant-man'];
 var wins = 0;
 var losses = 0;
-var randomWord = '';
+//var randomWord = ''; DO i need this
 var randomWordBankIndex = Math.floor(Math.random() * wordBank.length);
 var isGameWon = false;
 
@@ -15,6 +15,7 @@ var isGameWon = false;
 function pickAWord() {
   randomWord = wordBank[randomWordBankIndex];
   console.log(randomWord)
+  console.log(randomWord.length)
 }
 
 //console.log(word length)
@@ -40,22 +41,13 @@ function startTimer() {
   }, 1000);
 }
 
-function winGame() {
-  wins++;
-  winCount.textContent = `wins ${wins}`;
-}
-
-function loseGame() {
-  losses++;
-  lossCount.textContent = `losses ${losses}`;
-}
-
 function renderBlanks() {
   var wordLength = randomWord.length;
   var wordBlanks = '';
-  for (let i = 0; i < wordLength; i++) {
+  for (let i = wordLength; i < wordLength.length; i++) {
     wordBlanks += '_ '; 
   }
+  console.log(wordBlanks)
   wordToGuess.textContent = wordBlanks;
 }
 
@@ -69,9 +61,20 @@ function addLetter() {
 
 } //end addLetter
 
-localStorage.setItem(key, value);
+function winGame() {
+  wins++;
+  winCount.textContent = `wins ${wins}`;
+}
 
-localStorage.getItem(key);
+function loseGame() {
+  losses++;
+  lossCount.textContent = `losses ${losses}`;
+}
+
+
+//localStorage.setItem(key, value);
+
+//localStorage.getItem(key);
 
 startButton.addEventListener('click', startGame);
 document.addEventListener('keydown', checkGuessedLetter);
