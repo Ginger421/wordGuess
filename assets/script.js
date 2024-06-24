@@ -16,7 +16,13 @@ function pickAWord() {
   randomWord = wordBank[randomWordBankIndex];
   console.log(randomWord)
   console.log(randomWord.length)
-}
+
+  var wordLength = randomWord.length;
+  var wordBlanks = '';
+  for (let i = 0; i < wordLength.length; i++) {
+    wordBlanks += '_ '; 
+  }
+} //end pickAWord()
 
 //console.log(word length)
 function startGame() {
@@ -41,10 +47,11 @@ function startTimer() {
   }, 1000);
 }
 
+//have textfrom here in aove
 function renderBlanks() {
   var wordLength = randomWord.length;
   var wordBlanks = '';
-  for (let i = wordLength; i < wordLength.length; i++) {
+  for (let i = 0; i < wordLength.length; i++) {
     wordBlanks += '_ '; 
   }
   console.log(wordBlanks)
