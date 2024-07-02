@@ -1,3 +1,4 @@
+
 var winCount = document.querySelector('.win-count');
 var lossCount = document.querySelector('.loss-count');
 var startButton = document.querySelector('#start-button');
